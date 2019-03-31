@@ -32,6 +32,11 @@ module.exports = (api, opts) => {
   }
 
   api.render('./template')
+  api.render({
+    './.editorconfig': './template/.editorconfig',
+    './.eslintrc.js': './template/.eslintrc.js',
+    './.npmrc': './template/.npmrc',
+  })
 
   api.onCreateComplete(() => {
     fs.unlinkSync(api.resolve('src/router.js'))
