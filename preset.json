@@ -1,0 +1,17 @@
+{
+  "useTaobaoRegistry": true,
+  "packageManager": "yarn",
+  "useConfigFiles": true,
+  "plugins": {
+    "@vue/cli-plugin-babel": {},
+    "@vue/cli-plugin-eslint": {
+      "config": "base",
+      "lintOn": [
+        "save"
+      ]
+    }
+  },
+  "router": true,
+  "routerHistoryMode": true,
+  "cssPreprocessor": "less"
+}
