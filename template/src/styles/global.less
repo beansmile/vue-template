@@ -1,0 +1,40 @@
+@import '~normalize.css';
+@import './flex.less';
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: inherit;
+  touch-action: manipulation;
+}
+
+a[disable=true], a[disabled=disabled] {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: .5;
+}
+
+.fast-scroll {
+  overflow: auto;
+  transform: translateZ(0);
+  -webkit-overflow-scrolling: touch;
+}
+
+input, textarea {
+  line-height: inherit;
+}
+
+@supports (bottom: env(safe-area-inset-bottom)) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+
+    .van-tabbar--fixed, .safe-fixed {
+      margin-bottom: env(safe-area-inset-bottom);
+    }
+  }
+}

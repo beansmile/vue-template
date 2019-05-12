@@ -14,3 +14,5 @@ Vue.prototype.$setTitle = setTitle
 export {
   fly, rte, setTitle, sleep
 }
+
+export decoder from './decoder'
