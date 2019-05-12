@@ -27,6 +27,7 @@ module.exports = (api, opts) => {
       },
       devDependencies: {
         "postcss-px-to-relative-unit": "^1.0.1",
+        "style-vw-loader": "^1.0.2",
       }
     })
   }
@@ -36,6 +37,9 @@ module.exports = (api, opts) => {
     './.editorconfig': './template/.editorconfig',
     './.eslintrc.js': './template/.eslintrc.js',
     './.npmrc': './template/.npmrc',
+    './.env': './template/.env',
+    './.env.staging': './template/.env.staging',
+    './.env.production': './template/.env.production',
   })
 
   api.onCreateComplete(() => {

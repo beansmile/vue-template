@@ -1,8 +1,9 @@
 const path = require('path')
 const dayjs = require('dayjs')
 
-const NODE_ENV = process.env.NODE_ENV
-const release = `${NODE_ENV} ${dayjs().format('YYYY-MM-DD HH:mm')}`
+const VUE_APP_ENV = process.env.VUE_APP_ENV
+
+const release = `${VUE_APP_ENV} ${dayjs().format('YYYY-MM-DD HH:mm')}`
 process.env.VUE_APP_RELEASE = release
 
 module.exports = {

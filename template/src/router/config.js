@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import qs from 'qs'
-import decoder from './decoder'
+import { decoder } from '@/utils'
 
 Vue.use(Router)
 
